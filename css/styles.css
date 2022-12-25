@@ -1,0 +1,382 @@
+:root {
+    --font-arial: Arial, Helvetica, sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+
+     /*--body-bg-color: #808080;*/ 
+    --body-bg-color: #4e4e56;
+    /*--body-bg-color: #1f1fac;*/
+
+    --main-bg-color: #404040;
+    --main-text-color: #f6f6e8;
+}
+
+/* #f0dac7 */
+/* =============================== */
+/* UTILS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ============================= */
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+} */
+
+
+
+/* =============================== */
+
+/* BODY */
+body {
+    font-family: var(--font-arial);
+    background-color: var(--body-bg-color);
+    /* height: 100%; */
+    /* position: relative; */
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    color: var(--main-text-color);
+}
+
+/* .list {   
+  display: inline-block;
+ } */
+
+/* =============================== */
+
+/* HEADER   SITE NAV*/
+.header {
+    background-color: var(--main-bg-color);
+    padding: 20px 20px;
+    box-shadow: 0 3px 10px #00a0ff;
+    overflow: hidden;
+
+    /* max-width: 100%;
+    box-sizing: border-box; */
+}
+
+.logo-text {
+    float: left;
+}
+
+.logo-text,
+.site-nav {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.site-nav {
+    float: right;
+    margin: auto;
+}
+
+.header a {
+    padding-bottom: 18px;
+}
+
+.site-nav li {
+    display: inline;
+    padding: 0 10px;
+    color: var(--main-text-color);
+    border-right: 1px solid #677b27;
+    /* transition: .5s;   */
+}
+
+.active {
+    border-bottom: 3px solid #00cc00;
+}
+
+.logo-text .link:hover,
+.site-nav .link:hover {
+    color: #00cc00;
+    cursor: pointer;
+    border-bottom: 3px solid #00cc00;
+    /* transition: color 0.3s 0.2s ease;    */
+}
+
+.button-search:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px #fff;
+}
+
+/* =============================== */
+
+/* MAIN CONTENT */
+
+.main {
+    /* width: 1200px; */
+    /* position: relative;
+    min-height: 100%; */
+    width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding-bottom: 90px; */
+}
+
+.wrapper-col {
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    /*padding-top: 30px;*/
+    /* flex-grow: 1; */
+
+    /* flex: 1 0 auto; */
+}
+
+/* SECTION-MAIN  */
+.section-main {
+    /*border-width: thin, red;*/
+    font-size: 18px;
+    width: 65%;
+    float: right;
+    background-color: #87b8cf41; 
+    line-height: 1.6;
+    padding: 20px 2.5%;
+    /*color: rgb(23, 36, 110);*/ 
+}
+.colortext {
+    /* font-size: 20px; */
+    color: rgb(23, 36, 110);
+    /*color: rgb(255, 255, 0);*/
+    font-weight: bold;
+}
+.text-paragraph {
+    font-weight: bold;
+}
+
+.terminal {
+    color: #00cc00;
+    margin-left: 5px;
+}
+
+.command-line {
+    /*background: rgb(31, 30, 30);*/
+    /*background: #0F4999;*/
+    background: #131926;
+    color: #ffffff;
+}
+
+/* A-SIDE */
+.aside-col {
+
+    /* vertical-align: top; */
+    width: 25%;
+
+    float: left;
+    background-color: #16243c25;
+    padding: 20px 2.5%;
+}
+
+
+
+/* ===================================== */
+
+/* FORM */
+
+.container-form {
+    padding-top: 20px;
+}
+
+.button-search {
+    margin: 5px;
+    /* text style */
+    font-size: 20px;
+    background-color: #00a0ff;
+    line-height: 1.7;
+    border-radius: 10px;
+}
+
+#search-form {
+    width: 180px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #808080;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+/* .pict-search {
+  margin-right: 0; */
+/* display: inline; */
+/* margin: 0px;
+  padding: 0;
+} */
+
+/* .container-form button { */
+/* background-color: transparent; */
+/* border: none; */
+/* } */
+/* ===================================== */
+
+/* CATEGORY */
+.container-category {
+    padding-top: 20px;
+    /* border-right: 2px solid #ccc; */
+    /* border: 2px solid green; */
+}
+
+.container-category .link:hover {
+    color: #00a0ff;
+    cursor: pointer;
+}
+
+.container-category li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-category li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.cat-list {
+    padding-left: 10px;
+    padding-top: 0;
+    border-left: 2px solid #ccc;
+}
+
+/* ===================================== */
+/* FOOTER */
+
+.footer {
+    /* position:absolute; */
+    /* bottom: 0; */
+    /* height: 30px; */
+    /* width: 100%; */
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    text-align: center;
+    /* flex: 0 0 auto;  */
+}
+
+/* .widget-social li {
+} */
+
+/* ===================================== */
+/* OTHER */
+
+.line {
+    /* border-left: 2px solid #ccc; */
+    border-bottom: 2px solid #808080;
+    margin-top: 20px;
+    /* padding-left: 5px; */
+    /* padding-top: 10px; */
+}
+
+/* .address {
+    font-style: normal;
+} */
+
+.section-calendar {
+    border-top: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+}
+
+/* ===================================== */
+/* CALENDAR */
+
+/* calendar current date */
+#calendar2 {
+    /* background-color: #fff; */
+    width: 100%;
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+}
+
+#calendar2 thead tr:last-child {
+    font-size: small;
+    /* color: rgb(85, 85, 85); */
+    color: #00a0ff;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+    /* color: rgb(50, 50, 50); */
+    color: #f6f6e8;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+
+#calendar2 tbody td {
+    /* color: rgb(44, 86, 122); */
+    color: #f6f6e8;
+}
+
+#calendar2 tbody td:nth-child(n + 6),
+#calendar2 .holiday {
+    color: rgb(231, 140, 92);
+}
+
+#calendar2 tbody td.today {
+    /* background: rgb(220, 0, 0); */
+    background-color: #00cc00;
+    color: #3a3939;
+}
+
+/* ===================================== */
