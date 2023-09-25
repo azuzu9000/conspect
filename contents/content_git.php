@@ -4,6 +4,10 @@
     <h4>Проверить версию:</h4>
 
     <p class="command-line">
+        <span class="terminal">~$</span> <b>git version</b>
+    </p>
+	<div class="line"></div>
+	<p class="command-line">
         <span class="terminal">~$</span> <b>git --version</b>
     </p>
     <div class="line"></div>
