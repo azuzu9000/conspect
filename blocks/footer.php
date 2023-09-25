@@ -8,7 +8,7 @@
         </ul>
     </div>
     <div>
-        <span>&copy; 2022</span>
+        <span>&copy; 2023</span>
         <a class="link" href="#toppage">На верх</a>
     </div>      
 </footer> 
